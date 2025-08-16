@@ -34,20 +34,40 @@ class Particle {
     }
 }
 
-let particles = [];
+const particles = [];
 for (let i = 0; i < 200; i++) {
     particles.push(new Particle());
 }
 
+function drawConnections() {
+    for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 120) {
+                const opacity = 1 - distance / 120;
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+            }
+        }
+    }
+}
+
 function animate() {
-    ctx.fillStyle = 'rgba(10, 10, 10, 0.2)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     particles.forEach(p => {
         p.update();
         p.draw();
     });
 
+    drawConnections();
     requestAnimationFrame(animate);
 }
 
