@@ -16,11 +16,11 @@ Live demo: [https://playzenka.github.io/my-website/](https://playzenka.github.io
 
 ## 📂 Project Structure
 
-├─ index.html # Main HTML file
-├─ style.css # CSS styles
-├─ animation.js # Canvas background animation
-├─ favicon.ico # Website favicon
-└─ README.md # This file
+├─ index.html = Main HTML file
+├─ style.css = CSS styles
+├─ animation.js = Canvas background animation
+├─ favicon.ico = Website favicon
+└─ README.md = This file
 
 
 ---
