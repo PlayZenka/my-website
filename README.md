@@ -60,7 +60,8 @@ No additional dependencies or build tools are required.
 
 ## 📬 Contact
 
-**Discord:** @PlayZenka
+**Discord:** #PlayZenka
+**TG:** @PlayZenka
 
 **Email:** russ.m.010505@gmail.com
 
