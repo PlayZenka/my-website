@@ -1,17 +1,118 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
+    <!-- ────────────── META / SEO / PREVIEW ────────────── -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of ZenkaStudio, a Minecraft plugin developer. Includes plugin examples, contact info, and background animation.">
+
+    <meta property="og:title" content="ZenkaStudio - Minecraft Plugin Developer">
+    <meta property="og:description" content="Creating immersive and powerful Minecraft plugins with bosses, mechanics, and procedural generation.">
+    <meta property="og:image" content="link-to-preview.png">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <title>ZenkaStudio - Minecraft Plugin Developer</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- ────────────── BACKGROUND CANVAS ────────────── -->
     <canvas id="bg-canvas"></canvas>
-    <div class="content">
-        <h1>ZenkaStudio</h1>
-        <p>Creating immersive and powerful plugins for Minecraft servers</p>
-    </div>
+
+    <!-- ────────────── NAVIGATION HEADER ────────────── -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ────────────── MAIN CONTENT ────────────── -->
+    <main>
+        <!-- ───── HOME ───── -->
+        <section id="home" class="content center">
+            <h1>ZenkaStudio</h1>
+            <p>Creating immersive and powerful plugins for Minecraft servers</p>
+        </section>
+
+        <!-- ───── SKILLS ───── -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Kotlin</li>
+                        <li>JavaScript</li>
+                        <li>HTML / CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Game Dev</h3>
+                    <ul>
+                        <li>Paper / Spigot API</li>
+                        <li>PlaceholderAPI</li>
+                        <li>WorldEdit Integration</li>
+                        <li>Custom Enchantments</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git / GitHub</li>
+                        <li>IntelliJ IDEA</li>
+                        <li>Figma</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───── PROJECTS ───── -->
+        <section id="projects" class="section">
+            <h2>My Plugins</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>ReaperBoss</h3>
+                    <p>Epic boss plugin with custom effects, undead slayer mechanics and loot.</p>
+                    <a href="#">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>RadiationZones</h3>
+                    <p>Paper plugin adding dangerous zones with radiation levels, effects and support for PlaceholderAPI.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───── ABOUT ───── -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                I'm a Minecraft plugin developer with a passion for creating engaging, survival-enhancing mechanics using the Paper API.
+                I build systems like radiation zones, procedurally generated structures, and custom bosses.
+                I also work with PlaceholderAPI, OOP principles, and game design logic.
+            </p>
+        </section>
+
+        <!-- ───── CONTACT ───── -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>
+                Feel free to reach out via Discord: <strong>@PlayZenka</strong> or Telegram.
+            </p>
+            <a href="mailto:russ.m.010505@gmail.com" class="contact-button">Send Email</a>
+        </section>
+    </main>
+
+    <!-- ────────────── JAVASCRIPT ────────────── -->
     <script src="animation.js"></script>
 </body>
 </html>
