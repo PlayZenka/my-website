@@ -1,6 +1,6 @@
 # ZenkaStudio Portfolio
 
-[![Website](https://img.shields.io/badge/Website-Live-green)](https://your-github-username.github.io/)
+[![Website](https://img.shields.io/badge/Website-Live-green)](https://playzenka.github.io/my-website/)
 
 Welcome to the **portfolio of ZenkaStudio**, a Minecraft plugin developer. This site showcases my projects, skills, and ways to get in touch with me.
 
@@ -8,7 +8,7 @@ Welcome to the **portfolio of ZenkaStudio**, a Minecraft plugin developer. This 
 
 ## 🖥️ Demo
 
-Live demo: [https://your-github-username.github.io/](https://your-github-username.github.io/)
+Live demo: [https://playzenka.github.io/my-website/](https://playzenka.github.io/my-website/)
 
 ![Screenshot](link-to-preview.png)
 
@@ -16,7 +16,6 @@ Live demo: [https://your-github-username.github.io/](https://your-github-usernam
 
 ## 📂 Project Structure
 
-/
 ├─ index.html # Main HTML file
 ├─ style.css # CSS styles
 ├─ animation.js # Canvas background animation
@@ -54,22 +53,24 @@ Live demo: [https://your-github-username.github.io/](https://your-github-usernam
 git clone https://github.com/your-github-username/zenkastudio-portfolio.git
 ```
 
-2. Open index.html in your favorite browser.
+2. Open **index.html** in your favorite browser.
 No additional dependencies or build tools are required.
 
 ---
 
 ## 📬 Contact
 
-Discord: @PlayZenka
+**Discord:** @PlayZenka
 
-Email: russ.m.010505@gmail.com
+**Email:** russ.m.010505@gmail.com
 
---- ⚡ Deployment
+--- 
+## ⚡ Deployment
 This site is static and fully compatible with GitHub Pages.
 Just push your files to the repository and enable GitHub Pages in the repository settings
 
---- 📝 License
+--- 
+## 📝 License
 This project is open for personal portfolio use.
 © 2025 ZenkaStudio
 
