@@ -34,10 +34,7 @@ class Particle {
     }
 }
 
-const particles = [];
-for (let i = 0; i < 200; i++) {
-    particles.push(new Particle());
-}
+const particles = Array.from({ length: 200 }, () => new Particle());
 
 function drawConnections() {
     for (let i = 0; i < particles.length; i++) {
@@ -59,21 +56,67 @@ function drawConnections() {
     }
 }
 
-function animate() {
+function animateParticles() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
     particles.forEach(p => {
         p.update();
         p.draw();
     });
-
     drawConnections();
-    requestAnimationFrame(animate);
+    requestAnimationFrame(animateParticles);
 }
-
-animate();
 
 window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+
+const phrase = "Creating immersive and powerful plugins for Minecraft servers";
+const target = document.querySelector("#home p");
+let i = 0;
+
+function typeEffect() {
+    if (i < phrase.length) {
+        target.textContent += phrase[i];
+        i++;
+        setTimeout(typeEffect, 40);
+    }
+}
+setTimeout(() => {
+    target.textContent = "";
+    typeEffect();
+}, 800);
+
+const nav = document.querySelector('header nav');
+const homeSection = document.querySelector('#home');
+
+const navObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            nav.classList.remove('nav-hidden');
+        } else {
+            nav.classList.add('nav-hidden');
+        }
+    });
+}, {
+    threshold: 0.5
+});
+
+navObserver.observe(homeSection);
+
+const sections = document.querySelectorAll('.section');
+	
+const fadeInObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+sections.forEach(section => fadeInObserver.observe(section));
+
+
+animateParticles();
